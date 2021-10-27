@@ -1,0 +1,46 @@
+#video-description {
+    min-height: 95px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(170, 170, 170, 0.2);
+}
+
+#video-title {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.hashtag {
+    font-size: 12px;
+}
+
+.hashtag a {
+    color: inherit;
+}
+
+#video-bottom-bar {
+    font-size: 14px;
+    color: rgb(170, 170, 170);
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.videobar-right-cont {
+    height: 40px;
+    color: rgb(255,255,255);
+    align-items: center;
+}
+
+.videobar-right-cont button {
+    padding: 6px;
+}
+
+.videobar-right-cont div {
+    padding-right: 6px;
+}
+
+.likes-cont {
+    align-items: center;
+    padding-top: 2px;
+    border-bottom: 2px solid rgb(255,255,255);
+}

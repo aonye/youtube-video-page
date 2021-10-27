@@ -2,78 +2,336 @@
 <html>
 
 <head>
-
-    <title>Chill Drive - Lofi hip hop mix ~ Stress Relief, Relaxing Music</title>
+    <title>Klee</title>
     <link rel='icon' href='images/youtube.svg' type='image/svg'>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8" />
+    <link rel='stylesheet' href='main.css'>
+    <link rel='stylesheet' href='nav.css'>
+    <link rel='stylesheet' href='video-description.css'>
+    <link rel='stylesheet' href='channel-info.css'>
+    <link rel='stylesheet' href='comment-info-container.css'>
+    <link rel='stylesheet' href='comment-container.css'>
+    <meta charset='UTF-8' />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
     </style>
 </head>
 
 <body>
-    <nav>
-        <div class='nav-main-container'>
-            <div class='nav-left-container'>
-                <div class='nav-icon-container'>
-                    <img src='./images/menu.svg' alt='menu' width='24' height='24' />
+    <nav class='flexbox'>
+        <div class='nav-main-container flexbox'>
+            <div class='nav-left-container flexbox'>
+                <div class='nav-icon-container flexbox hoverable'>
+                    <img class='icon-size' src='./images/menu.svg' alt='menu' />
                 </div>
-                <div class='nav-logo-container'>
+                <div class='nav-logo-container flexbox hoverable'>
                     <img src='./images/yt-logo.svg' alt='YTLogo' />
                     <sup>JP</sup>
                 </div>
             </div>
-            <div class='nav-search-container'>
-                <div class='nav-search-bar-container'>
+            <div class='nav-search-container flexbox'>
+                <div class='nav-search-bar-container flexbox'>
                     <input id='search-bar' type='text' placeholder='Search'></input>
                 </div>
-                <div class='search-btn-container'>
-                    <button class='search-btn'>
-                        <img src='./images/magnify.svg' alt='search' width='24' height='24' />
+                <div class='search-btn-container flexbox'>
+                    <button class='search-btn hoverable'>
+                        <img class='icon-size' src='./images/magnify.svg' alt='search' />
                     </button>
                 </div>
             </div>
-            <div class='nav-right-container'>
-                <div class='nav-icon-container'>
-                    <img src='./images/video-plus.svg' alt='video' width='24' height='24' />
+            <div class='nav-right-container flexbox'>
+                <div class='nav-icon-container flexbox hoverable'>
+                    <img class='icon-size' src='./images/video-plus.svg' alt='video' />
                 </div>
-                <div class='nav-icon-container'>
-                    <img src='./images/apps.svg' alt='apps' width='24' height='24' />
+                <div class='nav-icon-container flexbox hoverable'>
+                    <img class='icon-size' src='./images/apps.svg' alt='apps' />
                 </div>
-                <div class='nav-icon-container'>
-                    <img src='./images/dots-vertical.svg' alt='dots' width='24' height='24' />
+                <div class='nav-icon-container flexbox hoverable'>
+                    <img class='icon-size' src='./images/dots-vertical.svg' alt='dots' />
                 </div>
-                <div class='nav-icon-container'>
+                <div class='nav-signin-container flexbox hoverable'>
                     <img src='./images/account-circle.svg' alt='acctcirc' />
                     <span>SIGN IN</span>
                 </div>
             </div>
         </div>
     </nav>
+    <div class='primary'>
+        <div class='container-left'>
+            <iframe width='862' height='485' src='https://www.youtube.com/embed/7-VnFQvCLDc'
+                title='YouTube video player' frameborder='0'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                allowfullscreen>
+            </iframe>
+            <div id='video-description' class='flexbox'>
+                <div class='hashtags-container hashtag blue-text'>
+                    <a href='https://www.youtube.com/hashtag/genshinimpact'>#GenshinImpact</a>
+                    <a href='https://www.youtube.com/hashtag/miHoYo'>#miHoYo</a>
+                </div>
+                <span id='video-title'>New Character Demo - 'Klee: Da-Da Da!' | Genshin Impact</span>
+                <div id='video-bottom-bar' class='flexbox'>
+                    <span id='views-date'>9,918,544 views • Oct 19, 2020</span>
+                    <div class='videobar-right-cont flexbox'>
+                        <div class='likes-cont flexbox'>
+                            <div class='flexbox centered'>
+                                <button class='button-size'>
+                                    <img class='small-icon' src='./images/thumb-up.svg' alt='thumb-up' />
+                                </button>
+                                <span font-size='14px'>240K</span>
+                            </div>
+                            <div class='flexbox centered'>
+                                <button class='button-size'>
+                                    <img class='small-icon' src='./images/thumb-down.svg' alt='thumb-down' />
+                                </button>
+                                <span font-size='14px'>2k</span>
+                            </div>
+                        </div>
+                        <div class='flexbox centered'>
+                            <button class='button-size'>
+                                <img class='icon-size' src='./images/share.svg' alt='share' />
+                            </button>
+                            <span>SHARE</span>
+                        </div>
+                        <div class='flexbox centered'>
+                            <button class='button-size'>
+                                <img class='icon-size' src='./images/playlist-plus.svg' alt='playlist' />
+                            </button>
+                            <span>SAVE</span>
+                        </div>
+                        <button width='40' height='40'>
+                            <img src='./images/dots-horizontal.svg' alt='dots-horizontal' width='24' height='24' />
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class='channel-container'>
+                <div class='top-row flexbox'>
+                    <div class='flexbox'>
+                        <img class='circle' src='./images/genshinlogo.png' alt='channel-logo' width='48' height='48' />
+                        <div>
+                            <div>
+                                <span>Genshin Impact</span>
+                                <img src='./images/check-circle.svg' alt='check-circle' width='14' height='14' />
+                            </div>
+                            <span>4.08M Subscribers</span>
+                        </div>
+                    </div>
+                    <button id='subscribe-btn'>SUBSCRIBE</button>
+                </div>
+                <div id='channel-body' class='flexbox'>
+                    <span>
+                        'Klee, I distinctly heard you say 'da-da da'!' —Jean Gunnhildr
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/7-VnFQvCLDc" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-    </iframe>
+                        Download FREE:
+                        <a class='blue-text' href='https://genshin.mihoyo.com/en'
+                            target='_blank'>https://genshin.mihoyo.com/en</a>
+                    </span>
+                    <div class='flexbox'>
+                        <div class='card flexbox'>
+                            <img src='./images/gameinfo.jpeg' alt='gameinfo' width='72' height='100' />
+                            <div class='cardinfo flexbox'>
+                                <span>Genshin Impact</span>
+                                <span>2020</span>
+                                <span>BROWSE GAME</span>
+                            </div>
+                        </div>
+                        <div class='card flexbox'>
+                            <img class='circle' src='./images/yt-gaming-icon.png' alt='yt-gaming-icon' width='56'
+                                height='56' />
+                            <div class='cardinfo flexbox'>
+                                <span>Gaming</span>
+                                <span>BROWSE ALL GAMING</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>SHOW MORE</h3>
+                    </div>
+                </div>
+            </div>
 
-    <div class='container-left'>
-        <div>hashtag1</div>
-        <div>hashtag1</div>
-        <div>hashtag1</div>
-        <div>titlepic</div>
-        <div>title</div>
-        <div>likebtn/likes</div>
-        <div>dislikebtn/dislikes</div>
-        <div>share</div>
-        <div>save</div>
-        <div>dots</div>
-        <div>subscribe</div>
+
+
+            <div id='comment-info-container' class='column flexbox'>
+                <div class='flexbox'>
+                    <span>13,761 Comments</span>
+                    <div id='comment-sortby-container' class='flexbox gray-text'>
+                        <img class='icon-size' src='./images/sort-variant.svg' alt='sort-comment' />
+                        <span>SORT BY</span>
+                    </div>
+                </div>
+                <div id=' personal-comment' class='flexbox'>
+                    <img class='circle' src='./images/account-circle-large.png' alt='account-circle' width='40'
+                        height='40' />
+                    <input id='comment-input' type='text' placeholder='Add a public comment...'></input>
+                </div>
+            </div>
+
+
+
+            <div id='comment-section'>
+                <!-- Comment #1 -->
+                <div class='comment-container flexbox'>
+                    <img class='circle' src='./images/account-circle-large.png' alt='account-circle' width='40'
+                        height='40' />
+                    <div class='comment-contents'>
+                        <div class='flexbox'>
+                            <span class='comment-username'>Rekken and Yu</span>
+                            <img class='verified-user-icon' src='./images/done_black.svg' width='12' height='12' />
+                            <span class='comment-age gray-text'>1 year ago</span>
+                        </div>
+                        <div class='comment-description'>
+                            <span>
+                                Mihoyo: I'm about to end this wallet's whole career
+                            </span>
+                        </div>
+                        <div class='comment-likes-cont flexbox gray-text'>
+                            <img class='comment-like-btn comment-icon hoverable' src='./images/thumb-up.svg'
+                                alt='thumb-up' />
+                            <span class='comment-like-btn'>34K</span>
+                            <img class='comment-icon hoverable' src='./images/thumb-down.svg' alt='thumb-down' />
+                            <span>REPLY</span>
+                        </div>
+                        <div class='comment-menudown flexbox centered blue-text hoverable'>
+                            <img class='icon-size' src='./images/menu-down.svg' alt='menudown' />
+                            <span>View 126 Replies</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Comment #2 -->
+                <div class='comment-container flexbox'>
+                    <img class='circle' src='./images/account-circle-large.png' alt='account-circle' width='40'
+                        height='40' />
+                    <div class='comment-contents'>
+                        <div class='flexbox'>
+                            <span class='comment-username'>Mackhenzie Rhod Yuson</span>
+                            <span class='comment-age gray-text'>2 months ago</span>
+                        </div>
+                        <div class='comment-description'>
+                            <span>
+                                Whos the scariest in Mondstadt?
+                                <br>
+                                <br>
+                                Everyone: Klee
+                                <br>
+                                ...
+                            </span>
+                        </div>
+                        <span class='comment-readmore gray-text hoverable'>
+                            Read more
+                        </span>
+                        <div class='comment-likes-cont flexbox gray-text'>
+                            <img class='comment-like-btn comment-icon hoverable' src='./images/thumb-up.svg'
+                                alt='thumb-up' />
+                            <span class='comment-like-btn'>8.2K</span>
+                            <img class='comment-icon hoverable' src='./images/thumb-down.svg' alt='thumb-down' />
+                            <span>REPLY</span>
+                        </div>
+                        <div class='comment-menudown flexbox centered blue-text hoverable'>
+                            <img class='icon-size' src='./images/menu-down.svg' alt='menudown' />
+                            <span>View 53 Replies</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Comment 3 -->
+                <div class='comment-container flexbox'>
+                    <img class='circle' src='./images/account-circle-large.png' alt='account-circle' width='40'
+                        height='40' />
+                    <div class='comment-contents'>
+                        <div class='flexbox'>
+                            <span class='comment-username'>GamerJosh2611</span>
+                            <span class='comment-age gray-text'>1 month ago (edited)</span>
+                        </div>
+                        <div class='comment-description'>
+                            <span>
+                                Klee: exists
+                                <br>
+                                <br>
+                                Pyro Archon, holding a Pyro Vision: ...hey, I just got a really funny idea
+                            </span>
+                        </div>
+                        <div class='comment-likes-cont flexbox gray-text'>
+                            <img class='comment-like-btn comment-icon hoverable' src='./images/thumb-up.svg'
+                                alt='thumb-up' />
+                            <span class='comment-like-btn'>1.2K</span>
+                            <img class='comment-icon hoverable' src='./images/thumb-down.svg' alt='thumb-down' />
+                            <span>REPLY</span>
+                        </div>
+                        <div class='comment-menudown flexbox centered blue-text hoverable'>
+                            <img class='icon-size' src='./images/menu-down.svg' alt='menudown' />
+                            <span>View 22 Replies</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Comment 4 -->
+                <div class='comment-container flexbox'>
+                    <img class='circle' src='./images/account-circle-large.png' alt='account-circle' width='40'
+                        height='40' />
+                    <div class='comment-contents'>
+                        <div class='flexbox'>
+                            <span class='comment-username'>SandwichBoiYT</span>
+                            <span class='comment-age gray-text'>2 months ago</span>
+                        </div>
+                        <div class='comment-description'>
+                            <span>
+                                Klee opened the door from the inside, meaning that she chose
+                                to stay in solitary confinement as
+                                <br>
+                                not to upset jean. truly
+                                precious &lt;3
+                            </span>
+                        </div>
+                        <div class='comment-likes-cont flexbox gray-text'>
+                            <img class='comment-like-btn comment-icon hoverable' src='./images/thumb-up.svg'
+                                alt='thumb-up' />
+                            <span class='comment-like-btn'>3.5K</span>
+                            <img class='comment-icon hoverable' src='./images/thumb-down.svg' alt='thumb-down' />
+                            <span>REPLY</span>
+                        </div>
+                        <div class='comment-menudown flexbox centered blue-text hoverable'>
+                            <img class='icon-size' src='./images/menu-down.svg' alt='menudown' />
+                            <span>View 21 Replies</span>
+                        </div>
+                    </div>
+                </div>
+                <!--Comment 5-->
+                <div class='comment-container flexbox'>
+                    <img class='circle' src='./images/account-circle-large.png' alt='account-circle' width='40'
+                        height='40' />
+                    <div class='comment-contents'>
+                        <div class='flexbox'>
+                            <span class='comment-username'>kdotc</span>
+                            <span class='comment-age gray-text'>6 months ago</span>
+                        </div>
+                        <div class='comment-description'>
+                            <span>
+                                Honestly, one of the rare times an ad for a mobile game is frickin' accurate.
+                            </span>
+                        </div>
+                        <div class='comment-likes-cont flexbox gray-text'>
+                            <img class='comment-like-btn comment-icon hoverable' src='./images/thumb-up.svg'
+                                alt='thumb-up' />
+                            <span class='comment-like-btn'>12K</span>
+                            <img class='comment-icon hoverable' src='./images/thumb-down.svg' alt='thumb-down' />
+                            <span>REPLY</span>
+                        </div>
+                        <div class='comment-menudown flexbox centered blue-text hoverable'>
+                            <img class='icon-size' src='./images/menu-down.svg' alt='menudown' />
+                            <span>View 90 Replies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=' container-right'>
+            <div>
+                Video Thumbnail, etc. goes here
+            </div>
+        </div>
     </div>
 
     <script>
         // Your JavaScript goes here!
-        console.log("Hello, World!")
+        console.log('Hello, World!')
     </script>
 </body>
 
