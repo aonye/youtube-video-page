@@ -103,49 +103,61 @@
                     </div>
                 </div>
             </div>
-            <div class='channel-container'>
-                <div class='top-row flexbox'>
+
+            <div id='channel-container'>
+
+                <div id='channel-top-row' class='flexbox'>
                     <div class='flexbox'>
                         <img class='circle' src='./images/genshinlogo.png' alt='channel-logo' width='48' height='48' />
-                        <div>
+                        <div id='channel-info-container'>
                             <div>
                                 <span>Genshin Impact</span>
                                 <img src='./images/check-circle.svg' alt='check-circle' width='14' height='14' />
                             </div>
-                            <span>4.08M Subscribers</span>
+                            <span class='gray-text'>4.08M Subscribers</span>
                         </div>
                     </div>
-                    <button id='subscribe-btn'>SUBSCRIBE</button>
+                    <button id='subscribe-btn' class='hoverable'>SUBSCRIBE</button>
                 </div>
-                <div id='channel-body' class='flexbox'>
-                    <span>
-                        'Klee, I distinctly heard you say 'da-da da'!' —Jean Gunnhildr
 
+                <div id='channel-body' class='flexbox'>
+                    <span id='channel-body-text'>
+                        'Klee, I distinctly heard you say 'da-da da'!' —Jean Gunnhildr
+                        <br>
+                        <br>
                         Download FREE:
                         <a class='blue-text' href='https://genshin.mihoyo.com/en'
                             target='_blank'>https://genshin.mihoyo.com/en</a>
+                        <br>
+                        <br>
                     </span>
-                    <div class='flexbox'>
+                    <div id='card-container' class='flexbox'>
                         <div class='card flexbox'>
-                            <img src='./images/gameinfo.jpeg' alt='gameinfo' width='72' height='100' />
+                            <img id='img' src='./images/gameinfo.jpeg' alt='gameinfo' width='72' height='100' />
                             <div class='cardinfo flexbox'>
-                                <span>Genshin Impact</span>
-                                <span>2020</span>
-                                <span>BROWSE GAME</span>
+                                <span class='game-title'>Genshin Impact</span>
+                                <span class='game-year gray-text'>2020</span>
+                                <div class='browse-game flexbox'>
+                                    <span class='gray-text'>BROWSE GAME</span>
+                                    <img class='icon-size' src='./images/chevron-right.svg' alt='chevron-right' />
+                                </div>
                             </div>
                         </div>
                         <div class='card flexbox'>
-                            <img class='circle' src='./images/yt-gaming-icon.png' alt='yt-gaming-icon' width='56'
-                                height='56' />
+                            <div class='card-img-container flexbox'>
+                                <img class='circle' src='./images/yt-gaming-icon.png' alt='yt-gaming-icon' width='56'
+                                    height='56' />
+                            </div>
                             <div class='cardinfo flexbox'>
-                                <span>Gaming</span>
-                                <span>BROWSE ALL GAMING</span>
+                                <span class='game-title'>Gaming</span>
+                                <div class='browse-game flexbox'>
+                                    <span class='gray-text'>BROWSE GAME</span>
+                                    <img class='icon-size' src='./images/chevron-right.svg' alt='chevron-right' />
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h3>SHOW MORE</h3>
-                    </div>
+                    <h4 class='gray-text'>SHOW MORE</h4>
                 </div>
             </div>
 
