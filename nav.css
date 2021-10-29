@@ -2,10 +2,11 @@ nav {
     background-color: rgb(32, 32, 32);
     width: 100%;
     min-height: 56px;
+    justify-content: center;
 }
 
 .nav-main-container {
-    width: 97%;
+    width: 98%;
     height: 100%;
     flex-direction: row;
     align-items: center;
