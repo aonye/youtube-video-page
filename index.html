@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Klee</title>
+    <title>New Character Demo - "Klee: Da-Da Da!" | Genshin Impact</title>
     <link rel='icon' href='images/youtube.svg' type='image/svg'>
     <link rel='stylesheet' href='main.css'>
     <link rel='stylesheet' href='nav.css'>
@@ -10,6 +10,7 @@
     <link rel='stylesheet' href='channel-info.css'>
     <link rel='stylesheet' href='comment-info-container.css'>
     <link rel='stylesheet' href='comment-container.css'>
+    <link rel='stylesheet' href='autoplaybar.css'>
     <meta charset='UTF-8' />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -56,8 +57,9 @@
         </div>
     </nav>
     <div class='primary'>
+
         <div class='container-left'>
-            <iframe width='862' height='485' src='https://www.youtube.com/embed/7-VnFQvCLDc'
+            <iframe width='862' height='485' src='https://www.youtube.com/embed/C_duDk5e8yU'
                 title='YouTube video player' frameborder='0'
                 allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
                 allowfullscreen>
@@ -329,11 +331,151 @@
                 </div>
             </div>
         </div>
-        <div class=' container-right'>
-            <div>
-                Video Thumbnail, etc. goes here
+
+        <div class='container-right'>
+            <div class='autoplay-bar flexbox'>
+                <span>Up Next</span>
+                <div id='autoplay'>
+                    <span class='gray-text'>AUTOPLAY</span>
+                    <label id='switch' class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <!-- Default Rec Card -->
+            <div class='default-card flexbox'>
+                <div>
+                    <img src='./images/default_rec.png' alt='' width='170' height='94'>
+                </div>
+                <div class='rec-info flexbox column'>
+                    <div class='title flexbox'>
+                        <span>
+                            Genshin Impact ALL Character
+                            <br>
+                            Trailers (Including Yanfei)
+                        </span>
+                        <img class='rec-dot icon-size hoverable' src='./images/dots-vertical-thumb.svg'
+                            alt='dots-vertical-thumb' />
+                    </div>
+                    <span>Cyberworld 9000</span>
+                    <span>380k views • 5 months ago</span>
+                </div>
+            </div>
+            <!-- Rec Card 1 -->
+            <div class='rec-card flexbox'>
+                <div>
+                    <img src='./images/rec-card-1.png' alt='' width='170' height='94'>
+                </div>
+                <div class='rec-info flexbox column'>
+                    <div class='title flexbox'>
+                        <span>
+                            Character Demo - "Zhongli:
+                            <br>
+                            The Listener" | Genshin Impact
+                        </span>
+                        <img class='rec-dot icon-size hoverable' src='./images/dots-vertical-thumb.svg'
+                            alt='dots-vertical-thumb' />
+                    </div>
+                    <span>Genshin Impact verified</span>
+                    <span>23M views • 10 months ago</span>
+                </div>
+            </div>
+            <!-- Rec Card 2 -->
+            <div class='rec-card flexbox'>
+                <div>
+                    <img src='./images/rec-card-2.png' alt='' width='170' height='94'>
+                </div>
+                <div class='rec-info flexbox column'>
+                    <div class='title flexbox'>
+                        <span>
+                            Genshin Impact - All Calm /
+                            <br>
+                            Relaxing Music
+                        </span>
+                        <img class='rec-dot icon-size hoverable' src='./images/dots-vertical-thumb.svg'
+                            alt='dots-vertical-thumb' />
+                    </div>
+                    <span>BunnyHelp</span>
+                    <span>3.4M views • 1 year ago</span>
+                </div>
+            </div>
+            <!-- Rec Card 3 -->
+            <div class='rec-card flexbox'>
+                <div>
+                    <img src='./images/rec-card-3.png' alt='' width='170' height='94'>
+                </div>
+                <div class='rec-info flexbox column'>
+                    <div class='title flexbox'>
+                        <span>
+                            When Diluc Takes Care of Klee
+                        </span>
+                        <img class='rec-dot icon-size hoverable' src='./images/dots-vertical-thumb.svg'
+                            alt='dots-vertical-thumb' />
+                    </div>
+                    <span>ON Game verified</span>
+                    <span>1.5M views • 6 months ago</span>
+                </div>
+            </div>
+            <!-- Rec Card 4 -->
+            <div class='rec-card flexbox'>
+                <div>
+                    <img src='./images/rec-card-4.png' alt='' width='170' height='94'>
+                </div>
+                <div class='rec-info flexbox column'>
+                    <div class='title flexbox'>
+                        <span>
+                            New Character Demo - "Diona:
+                            <br>
+                            Wine Industry Slayer" |...
+                        </span>
+                        <img class='rec-dot icon-size hoverable' src='./images/dots-vertical-thumb.svg'
+                            alt='dots-vertical-thumb' />
+                    </div>
+                    <span>Genshin Impact verified</span>
+                    <span>6.8M views • 11 months ago</span>
+                </div>
+            </div>
+            <!-- Rec Card 5 -->
+            <div class='rec-card flexbox'>
+                <div>
+                    <img src='./images/rec-card-5.png' alt='' width='170' height='94'>
+                </div>
+                <div class='rec-info flexbox column'>
+                    <div class='title flexbox'>
+                        <span>
+                            GENSHIN CONCERT 2021
+                            <br>
+                            "Melodies of an Endless...
+                        </span>
+                        <img class='rec-dot icon-size hoverable' src='./images/dots-vertical-thumb.svg'
+                            alt='dots-vertical-thumb' />
+                    </div>
+                    <span>Genshin Impact verified</span>
+                    <span>3.9M views • 3 weeks ago</span>
+                </div>
+            </div>
+            <!-- Rec Card 6 -->
+            <div class='rec-card flexbox'>
+                <div>
+                    <img src='./images/rec-card-6.png' alt='' width='170' height='94'>
+                </div>
+                <div class='rec-info flexbox column'>
+                    <div class='title flexbox'>
+                        <span class='title'>
+                            Character Demo - "Hu Tao: Let
+                            <br>
+                            the Living Beware" | Genshin...
+                        </span>
+                        <img class='rec-dot icon-size hoverable' src='./images/dots-vertical-thumb.svg'
+                            alt='dots-vertical-thumb' />
+                    </div>
+                    <span>Genshin Impact verified</span>
+                    <span>15M views • 8 months ago</span>
+                </div>
             </div>
         </div>
+
     </div>
 
     <script>
