@@ -51,9 +51,14 @@ nav {
     width: 35vw;
     max-width: 560px;
     background-color: rgb(24,24,24);
+    font-size: 16px;
     color: rgb(255,255,255);
     border: none;
     padding-left: 15px;
+}
+
+#search-bar {
+    outline: 1px solid rgb(255,255,255, 0.1);
 }
 
 #search-bar:focus {
