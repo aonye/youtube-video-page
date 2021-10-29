@@ -1,3 +1,11 @@
+@import './nav.css';
+@import './video-description.css';
+@import './channel-info.css';
+@import './comment-info-container.css';
+@import './user-comment-cont.css';
+@import './rec-video-bar.css';
+@import './mediaquery.css';
+
 html, body {
     margin: 0;
     padding: 0;
@@ -10,6 +18,8 @@ button {
     border: none;
     padding: 0;
 }
+
+/* Shorthand styles */
 
 .circle {
     border-radius: 50%;
@@ -54,12 +64,13 @@ button {
     color: rgb(62, 166, 255);
 }
 
+/* Main Body Containers */
+
 .primary {
     display: flex;
-    height: 100vh;
+    height: 100%;
     justify-content: center;
-    margin: 0px 0px 0px 24px;
-    padding: 24px 24px 0px 0px;
+    padding-top: 24px;
 }
 
 .main-container{
@@ -68,9 +79,10 @@ button {
 
 .container-left {
     color: rgb(255,255,255);
+    margin-left: 24px;
+    width: 50vw;
 }
 
 .container-right {
-    height: 1000px;
-    margin-left: 28px;
+    margin-left: 24px;
 }

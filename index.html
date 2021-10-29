@@ -5,12 +5,6 @@
     <title>New Character Demo - "Klee: Da-Da Da!" | Genshin Impact</title>
     <link rel='icon' href='images/youtube.svg' type='image/svg'>
     <link rel='stylesheet' href='main.css'>
-    <link rel='stylesheet' href='nav.css'>
-    <link rel='stylesheet' href='video-description.css'>
-    <link rel='stylesheet' href='channel-info.css'>
-    <link rel='stylesheet' href='comment-info-container.css'>
-    <link rel='stylesheet' href='comment-container.css'>
-    <link rel='stylesheet' href='autoplaybar.css'>
     <meta charset='UTF-8' />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -56,14 +50,17 @@
             </div>
         </div>
     </nav>
+
     <div class='primary'>
 
         <div class='container-left'>
-            <iframe width='862' height='485' src='https://www.youtube.com/embed/C_duDk5e8yU'
-                title='YouTube video player' frameborder='0'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                allowfullscreen>
-            </iframe>
+            <div class="video-wrap">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/C_duDk5e8yU" title='YouTube video player' frameborder='0'
+                        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                        allowfullscreen></iframe>
+                </div>
+            </div>
             <div id='video-description' class='flexbox'>
                 <div class='hashtags-container hashtag blue-text'>
                     <a href='https://www.youtube.com/hashtag/genshinimpact'>#GenshinImpact</a>
@@ -164,8 +161,6 @@
                 </div>
             </div>
 
-
-
             <div id='comment-info-container' class='column flexbox'>
                 <div class='flexbox'>
                     <span>13,761 Comments</span>
@@ -180,8 +175,6 @@
                     <input id='comment-input' type='text' placeholder='Add a public comment...'></input>
                 </div>
             </div>
-
-
 
             <div id='comment-section'>
                 <!-- Comment #1 -->
